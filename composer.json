@@ -1,0 +1,14 @@
+{
+    "name": "friendsofinertia/laravel-seo",
+    "description": "A simple meta data builder for Laravel.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FriendsOfInertia\\LaravelSEO\\": ".src"
+        }
+    },
+    "require": {},
+    "config": {
+        "sort-packages": true
+    }
+}
