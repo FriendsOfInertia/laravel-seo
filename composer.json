@@ -4,11 +4,24 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "FriendsOfInertia\\LaravelSEO\\": ".src"
+            "FriendsOfInertia\\LaravelSEO\\": "./src"
         }
     },
-    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "FriendsOfInertia\\Tests\\LaravelSEO\\": "./tests"
+        }
+    },
+    "require": {
+        "illuminate/collections": "^8.23",
+        "spatie/data-transfer-object": "^2.6"
+    },
     "config": {
         "sort-packages": true
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "spatie/ray": "^1.13",
+        "vimeo/psalm": "^4.4"
     }
 }
