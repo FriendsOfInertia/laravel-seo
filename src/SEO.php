@@ -88,7 +88,7 @@ class SEO
         $forwarded = false;
 
         foreach ($this->drivers() as $driver) {
-            $forwarded = $forwarded | $this->forwardCallTo($driver, $method, $arguments);
+            $forwarded = $forwarded || $this->forwardCallTo($driver, $method, $arguments);
         }
 
         if (! $forwarded) {
