@@ -10,7 +10,7 @@ use FriendsOfInertia\LaravelSEO\Tag\MetaTag;
  */
 abstract class AbstractMetaDriver extends AbstractDriver
 {
-    protected string $prefix;
+    protected ?string $prefix;
 
     protected function createMetaPropertyTag(string $property, string $content)
     {
