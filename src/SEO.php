@@ -4,6 +4,7 @@ namespace FriendsOfInertia\LaravelSEO;
 
 use FriendsOfInertia\LaravelSEO\Driver\Contract\DriverContract;
 use FriendsOfInertia\LaravelSEO\Exception\InvalidDriverException;
+use FriendsOfInertia\LaravelSEO\Exception\InvalidDriverMethodException;
 
 /**
  * The SEO class itself handles the instances we have of each driver. This will
@@ -69,13 +70,42 @@ class SEO
     private function callDriverMethod(string $method, string ...$arguments): SEO
     {
         foreach ($this->drivers() as $driver) {
-            if (! method_exists($driver, $method)) {
-                continue;
-            }
-
-            $driver->{$method}(...$arguments);
+            $this->forwardCallTo($driver, $method, $arguments);
         }
 
         return $this;
+    }
+
+    public function __call(string $method, array $arguments)
+    {
+        if (
+            str_ends_with($method, 'Driver')
+            && array_key_exists($driver = substr($method, 0, -6), $this->drivers)
+        ) {
+            return $this->drivers[$driver];
+        }
+
+        $forwarded = false;
+
+        foreach ($this->drivers() as $driver) {
+            $forwarded = $forwarded | $this->forwardCallTo($driver, $method, $arguments);
+        }
+
+        if (! $forwarded) {
+            throw new InvalidDriverMethodException(sprintf('None of the drivers implement %s()', $method));
+        }
+
+        return $this;
+    }
+
+    private function forwardCallTo($object, string $method, array $arguments): bool
+    {
+        if (! method_exists($object, $method)) {
+            return false;
+        }
+
+        $object->{$method}(...$arguments);
+
+        return true;
     }
 }

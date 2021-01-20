@@ -25,4 +25,19 @@ class MetaTagDriver extends AbstractDriver
 
         return $this;
     }
+
+    /**
+     * @param string|string[] $keywords
+     */
+    public function keywords($keywords): MetaTagDriver
+    {
+        $this->tags['keywords'] = new MetaTag([
+            'attributes' => [
+                'name' => 'keywords',
+                'content' => is_array($keywords) ? implode(', ', $keywords) : $keywords,
+            ],
+        ]);
+
+        return $this;
+    }
 }
