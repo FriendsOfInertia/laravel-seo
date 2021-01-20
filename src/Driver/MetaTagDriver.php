@@ -13,7 +13,7 @@ class MetaTagDriver extends AbstractDriver
             'attributes' => [
                 'name'    => 'description',
                 'content' => $description,
-            ]
+            ],
         ]);
 
         return $this;

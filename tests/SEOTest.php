@@ -56,6 +56,7 @@ class SEOTest extends TestCase
         foreach ($seo->drivers() as $driver) {
             if (! method_exists($driver, 'title')) {
                 $this->assertEmpty($driver->getTags());
+
                 continue;
             }
 

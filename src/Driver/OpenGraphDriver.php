@@ -2,24 +2,20 @@
 
 namespace FriendsOfInertia\LaravelSEO\Driver;
 
-use FriendsOfInertia\LaravelSEO\Driver\Concern\CreatesMetaProperties;
-
-class OpenGraphDriver extends AbstractDriver
+class OpenGraphDriver extends AbstractMetaDriver
 {
-    use CreatesMetaProperties;
-
     protected string $prefix = 'og:';
 
     public function description(string $description): OpenGraphDriver
     {
-        $this->tags['description'] = $this->createMetaProperty('description', $description);
+        $this->tags['description'] = $this->createMetaPropertyTag('description', $description);
 
         return $this;
     }
 
     public function title(string $title): OpenGraphDriver
     {
-        $this->tags['title'] = $this->createMetaProperty('title', $title);
+        $this->tags['title'] = $this->createMetaPropertyTag('title', $title);
 
         return $this;
     }

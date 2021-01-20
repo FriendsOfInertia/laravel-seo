@@ -7,7 +7,7 @@ use FriendsOfInertia\LaravelSEO\Exception\InvalidDriverException;
 
 /**
  * The SEO class itself handles the instances we have of each driver. This will
- * be provided to Laravel as a singleton and shipped with a facade helper. 
+ * be provided to Laravel as a singleton and shipped with a facade helper.
  */
 class SEO
 {
