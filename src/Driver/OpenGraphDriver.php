@@ -4,7 +4,7 @@ namespace FriendsOfInertia\LaravelSEO\Driver;
 
 class OpenGraphDriver extends AbstractMetaDriver
 {
-    protected string $prefix = 'og:';
+    protected ?string $prefix = 'og:';
 
     public function description(string $description): OpenGraphDriver
     {
