@@ -4,12 +4,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "FriendsOfInertia\\LaravelSEO\\": "./src"
+            "FriendsOfInertia\\LaravelSeo\\": "./src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FriendsOfInertia\\Tests\\LaravelSEO\\": "./tests"
+            "FriendsOfInertia\\Tests\\LaravelSeo\\": "./tests"
         }
     },
     "config": {
@@ -17,12 +17,17 @@
     },
     "require": {
         "illuminate/collections": "^8.23",
-        "spatie/data-transfer-object": "^2.6"
+        "spatie/data-transfer-object": "^2.6",
+        "symfony/serializer": "^5.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.18",
         "phpunit/phpunit": "^9.5",
         "spatie/ray": "^1.13",
         "vimeo/psalm": "^4.4"
+    },
+    "scripts": {
+        "coverage": "vendor/bin/phpunit --coverage-html=coverage",
+        "test": "vendor/bin/phpunit"
     }
 }

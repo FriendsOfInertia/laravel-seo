@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91e44a972faa55ee4190b0c189c78dac",
+    "content-hash": "6760e305a41e8c59e2c7754c0dfd402f",
     "packages": [
         {
             "name": "illuminate/collections",
@@ -316,6 +316,270 @@
                 }
             ],
             "time": "2020-11-26T09:24:53+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-07T16:49:33+00:00"
+        },
+        {
+            "name": "symfony/serializer",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/serializer.git",
+                "reference": "70c5aa59ab0642033391a5591c9771ee417e7cef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/70c5aa59ab0642033391a5591c9771ee417e7cef",
+                "reference": "70c5aa59ab0642033391a5591c9771ee417e7cef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "phpdocumentor/reflection-docblock": "<3.2.2",
+                "phpdocumentor/type-resolver": "<1.4.0",
+                "symfony/dependency-injection": "<4.4",
+                "symfony/property-access": "<4.4",
+                "symfony/property-info": "<4.4",
+                "symfony/yaml": "<4.4"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.10.4",
+                "doctrine/cache": "~1.0",
+                "phpdocumentor/reflection-docblock": "^3.2|^4.0|^5.0",
+                "symfony/cache": "^4.4|^5.0",
+                "symfony/config": "^4.4|^5.0",
+                "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/error-handler": "^4.4|^5.0",
+                "symfony/filesystem": "^4.4|^5.0",
+                "symfony/form": "^4.4|^5.0",
+                "symfony/http-foundation": "^4.4|^5.0",
+                "symfony/http-kernel": "^4.4|^5.0",
+                "symfony/mime": "^4.4|^5.0",
+                "symfony/property-access": "^4.4.9|^5.0.9",
+                "symfony/property-info": "^4.4|^5.0",
+                "symfony/uid": "^5.1",
+                "symfony/validator": "^4.4|^5.0",
+                "symfony/var-exporter": "^4.4|^5.0",
+                "symfony/yaml": "^4.4|^5.0"
+            },
+            "suggest": {
+                "doctrine/annotations": "For using the annotation mapping. You will also need doctrine/cache.",
+                "doctrine/cache": "For using the default cached annotation reader and metadata cache.",
+                "psr/cache-implementation": "For using the metadata cache.",
+                "symfony/config": "For using the XML mapping loader.",
+                "symfony/mime": "For using a MIME type guesser within the DataUriNormalizer.",
+                "symfony/property-access": "For using the ObjectNormalizer.",
+                "symfony/property-info": "To deserialize relations.",
+                "symfony/var-exporter": "For using the metadata compiler.",
+                "symfony/yaml": "For using the default YAML mapping loader."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Serializer\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/serializer/tree/v5.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-03T04:42:09+00:00"
         }
     ],
     "packages-dev": [
@@ -4183,85 +4447,6 @@
             "time": "2020-10-24T12:08:07+00:00"
         },
         {
-            "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
-                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "suggest": {
-                "ext-ctype": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for ctype functions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "ctype",
-                "polyfill",
-                "portable"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-07T16:49:33+00:00"
-        },
-        {
             "name": "symfony/polyfill-intl-grapheme",
             "version": "v1.22.0",
             "source": {
@@ -4712,89 +4897,6 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-php73/tree/v1.22.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-07T16:49:33+00:00"
-        },
-        {
-            "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php80\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ],
-                "classmap": [
-                    "Resources/stubs"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
             },
             "funding": [
                 {

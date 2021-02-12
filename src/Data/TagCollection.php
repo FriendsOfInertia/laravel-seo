@@ -1,12 +1,12 @@
 <?php
 
-namespace FriendsOfInertia\LaravelSEO\Tag;
+namespace FriendsOfInertia\LaravelSeo\Data;
 
 use Illuminate\Support\Collection;
 
 class TagCollection extends Collection
 {
-    public function offsetGet($key): AbstractTag
+    public function offsetGet($key): Tag
     {
         return parent::offsetGet($key);
     }
