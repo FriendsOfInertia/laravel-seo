@@ -3,7 +3,6 @@
 namespace FriendsOfInertia\LaravelSeo\Serializer\Normalizer;
 
 use FriendsOfInertia\LaravelSeo\Data\TagCollection;
-use Illuminate\Support\Collection;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
