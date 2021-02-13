@@ -11,7 +11,7 @@ class SeoHtmlEncoder implements EncoderInterface
         return join("\n", $data);
     }
 
-    public function supportsEncoding(string $format, )
+    public function supportsEncoding(string $format)
     {
         return $format === 'seo:html';
     }

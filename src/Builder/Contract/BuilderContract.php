@@ -12,7 +12,7 @@ interface BuilderContract
      *
      * @return static
      */
-    public function addTag(Tag $tag): static;
+    public function addTag(Tag $tag): self;
 
     /**
      * Returns all the tags in the collection.
@@ -26,5 +26,5 @@ interface BuilderContract
      *
      * @return static
      */
-    public function setTags(TagCollection $tags): static;
+    public function setTags(TagCollection $tags): self;
 }

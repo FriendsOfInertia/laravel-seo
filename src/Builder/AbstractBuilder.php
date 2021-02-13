@@ -18,7 +18,7 @@ abstract class AbstractBuilder implements BuilderContract
     /**
      * {@inheritdoc}
      */
-    public function addTag(Tag $tag): static
+    public function addTag(Tag $tag): self
     {
         if ($tag->isUnique()) {
             $this->tags[$tag->getUnique()] = $tag;
@@ -40,7 +40,7 @@ abstract class AbstractBuilder implements BuilderContract
     /**
      * {@inheritdoc}
      */
-    public function setTags(TagCollection $tags): static
+    public function setTags(TagCollection $tags): self
     {
         $this->tags = $tags;
 
