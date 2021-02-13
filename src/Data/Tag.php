@@ -15,20 +15,24 @@ class Tag
     private ?string $unique = null;
 
     /**
+     * Require the setting of the type on construct.
+     * 
+     * @param  string  $type
+     */
+    public function __construct(string $type)
+    {
+        $this->setType($type);
+    }
+
+    /**
      * Fluent helper to create a new tag instance.
      *
      * @param  string  $type
      * @return self
      */
-    public static function new(?string $type = null): self
+    public static function new(string $type): self
     {
-        $tag = new self;
-
-        if ($type) {
-            $tag->setType($type);
-        }
-
-        return $tag;
+        return new self($type);
     }
 
     /**
@@ -104,12 +108,6 @@ class Tag
      */
     public function getType(): string
     {
-        if (! isset($this->type)) {
-            throw new InvalidTagType(
-                'No tag type has been set!'
-            );
-        }
-
         return $this->type;
     }
 

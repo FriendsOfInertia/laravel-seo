@@ -11,7 +11,7 @@ class TagTest extends TestCase
     public function test_it_can_set_attributes()
     {
         $attributes = ['content' => 'test', 'name' => 'test'];
-        $tag        = Tag::new();
+        $tag        = Tag::new(Tag::META);
 
         $this->assertFalse($tag->hasAttributes());
 
@@ -24,7 +24,7 @@ class TagTest extends TestCase
     public function test_it_can_set_content()
     {
         $content = 'Some test tag content';
-        $tag     = Tag::new();
+        $tag     = Tag::new(Tag::META);
 
         $this->assertFalse($tag->hasContent());
 
@@ -49,16 +49,10 @@ class TagTest extends TestCase
         $this->assertEquals(Tag::META, $tag->getType());
     }
 
-    public function test_a_type_must_be_set()
-    {
-        $this->expectException(InvalidTagType::class);
-        Tag::new()->getType();
-    }
-
     public function test_it_can_set_unique()
     {
         $key = 'unique!';
-        $tag = Tag::new();
+        $tag = Tag::new(Tag::TITLE);
 
         $this->assertFalse($tag->isUnique());
 
