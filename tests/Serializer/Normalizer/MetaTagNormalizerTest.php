@@ -11,7 +11,7 @@ class MetaTagNormalizerTest extends TestCase
     public function test_it_can_normalize_tag()
     {
         $normalizer = new MetaTagNormalizer;
-        $tag = $this->createTag();
+        $tag        = $this->createTag();
 
         $this->assertTrue($normalizer->supportsNormalization($tag, 'seo:html'));
         $this->assertEquals(
@@ -23,7 +23,7 @@ class MetaTagNormalizerTest extends TestCase
     public function test_it_cannot_normalize_non_html_formats()
     {
         $normalizer = new MetaTagNormalizer;
-        $tag = $this->createTag();
+        $tag        = $this->createTag();
 
         $this->assertFalse($normalizer->supportsNormalization($tag, 'json'));
     }
@@ -31,7 +31,7 @@ class MetaTagNormalizerTest extends TestCase
     private function createTag(): Tag
     {
         return Tag::new(Tag::META)->setAttributes([
-            'name' => 'description',
+            'name'    => 'description',
             'content' => 'test description',
         ]);
     }

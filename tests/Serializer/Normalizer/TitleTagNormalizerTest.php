@@ -11,7 +11,7 @@ class TitleTagNormalizerTest extends TestCase
     public function test_it_can_normalize_tag()
     {
         $normalizer = new TitleTagNormalizer;
-        $tag = $this->createTag();
+        $tag        = $this->createTag();
 
         $this->assertTrue($normalizer->supportsNormalization($tag, 'seo:html'));
         $this->assertEquals('<title id="my-page-title">Page Title</title>', $normalizer->normalize($tag));
@@ -20,7 +20,7 @@ class TitleTagNormalizerTest extends TestCase
     public function test_it_cannot_normalize_non_html_formats()
     {
         $normalizer = new TitleTagNormalizer;
-        $tag = $this->createTag();
+        $tag        = $this->createTag();
 
         $this->assertFalse($normalizer->supportsNormalization($tag, 'json'));
     }

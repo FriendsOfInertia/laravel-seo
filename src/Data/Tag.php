@@ -16,7 +16,7 @@ class Tag
 
     /**
      * Require the setting of the type on construct.
-     * 
+     *
      * @param  string  $type
      */
     public function __construct(string $type)
